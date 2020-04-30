@@ -1,0 +1,7 @@
+a = int(input())
+k = 0
+p = 1
+while p < a:
+    p = p * 2
+    k += 1
+print(k)

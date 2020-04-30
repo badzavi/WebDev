@@ -1,0 +1,8 @@
+<h2 class="header-title">Categories</h2>
+<div class="categories_block">
+  <div *ngFor="let category of categories">
+    <button [title]="category" [routerLink]="['/category/' + category.index + '/products']" class="categories_btn">
+      {{category.name}}
+    </button>
+  </div>
+</div>

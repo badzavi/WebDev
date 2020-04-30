@@ -1,0 +1,35 @@
+<h2 class="header-title">{{categoryType.name}}</h2>
+<div class="wrapper">
+<div *ngFor="let product of products; index as productId">
+  <div *ngIf="product.category == categoryType.index && product" class="box">
+    <h3>
+      <a [title]="product.name + ' details'" [routerLink]="['/category/' + categoryType.index + '/products/' +  productId]">
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+    <button (click)="share()">
+      Share
+    </button>
+    <a href="https://wa.me/77087033500?text={{product.url}}" class="button">Share via Whats App</a>
+
+    <app-product-alerts
+      [product]="product"
+      (notify)="onNotify()">
+    </app-product-alerts>
+  </div>
+</div>
+
+</div>
+
+<a [routerLink]="['/product-gallery']" class="button gallery"> Gallery </a>
+
+
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

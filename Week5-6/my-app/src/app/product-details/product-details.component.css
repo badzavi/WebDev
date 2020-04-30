@@ -1,0 +1,38 @@
+h2{
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-family: Elephant;
+  border: 1px solid black;
+  padding: 10px 0;
+}
+
+.wrapper{
+  display: flex;
+}
+
+img{
+  display: block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 40vh;
+  height: 40vh;
+  margin: 0 5vh;
+}
+
+.text h3, h4, p{
+  color: black;
+  font-family: Elephant;
+  font-weight: normal;
+}
+
+.text p{
+  color: #1976d2;
+  font-family: Elephant;
+  font-weight: normal;
+}
+
+button{
+  font-size: 20px;
+  border-radius: 5px;
+}
